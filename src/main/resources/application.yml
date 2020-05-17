@@ -1,0 +1,14 @@
+
+  
+spring.main.banner-mode: off
+
+
+logging:
+  config: classpath:logback-spring.xml  
+    
+  level:
+    root: info
+  driver: fluentd
+  options:
+    fluentd-address: "localhost:24224"
+    fluentd-async-connect: "true"    
